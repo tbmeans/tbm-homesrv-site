@@ -1,0 +1,14 @@
+<option value="calming" selected>Calming</option>
+<option value="favorites">Favorites</option>
+<option value="classic">Classics</option>
+<option value="bibleepic">Bible epics</option>
+<option value="holiday">Holiday</option>
+<option value="trek">Star Trek</option>
+<option value="indianajones">Indiana Jones</option>
+<option value="naturaldisasters">Natural disaster</option>
+<option value="history">Historical</option>
+<option value="action">Action</option>
+<option value="superhero">Super hero</option>
+<option value="shocktheater">Shock Theater!</option>
+<option value="scifi">Sci-fi</option>
+<option value="fantasy">Fantasy</option>

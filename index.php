@@ -34,9 +34,6 @@
         <a class="nav-link" href="blog">WordPress</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="chess.html">Chess</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="movies.html">Movies</a>
       </li>
       <li class="nav-item">
@@ -108,9 +105,6 @@
             die();
           }      
           ?>
-        </div>
-        <div class="p-4">
-          Sample Chess opening
         </div>
         <div class="p-4">
           Sample Bing landscape image

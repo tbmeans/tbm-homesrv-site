@@ -8,7 +8,6 @@
   * Use the WP instance as a personal blog or WP dev env.
 * Page scripts expect a database with tables of 
   * titles of movies recorded from TV
-  * chess moves
   * Bing wallpaper images
 * Populate the php scripts with login information for the database
 * Movie search result previews powered by video.js

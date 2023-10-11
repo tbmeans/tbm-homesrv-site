@@ -1,2 +1,5 @@
 # personal list of categories to populate the <select> in movies.html
 catsel.dat
+
+# local database login data
+pmalogin.dat

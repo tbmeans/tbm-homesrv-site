@@ -54,7 +54,7 @@
     }
 
     $user = '';
-    $database = implode("_", array($user, ''));
+    $database = $user . "_" . '';
     $dsn = "mysql:host=localhost;dbname=$database";
     $password = '';
     $table = 'tvrecs';

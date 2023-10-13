@@ -9,6 +9,7 @@
 * Page scripts expect a database with tables of 
   * titles of movies recorded from TV
   * Bing wallpaper images
+  * Name your own database(s) to hold these tables
 * Populate the php scripts with login information for the database
 * Movie search result previews powered by video.js
 
@@ -18,7 +19,6 @@
 * 'whenrec', date recorded in YYYYMMDD##
   * Final 2 digits distinguish recordings made on same date
   * This is the primary key
-* 'fromchannel', name of channel recorded from
 * 'cc', SQL boolean of whether the recording has caption data
 * 'rating', make up your own categories
   * Also use categories to fill the Select options in movies.html 

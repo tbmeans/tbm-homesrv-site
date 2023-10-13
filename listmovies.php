@@ -60,9 +60,8 @@
     $table = 'tvrecs';
     $pkey = 'whenrec';
     $col1 = 'title';
-    $col2 = 'fromchannel';
-    $col3 = 'cc';
-    $meta = 'rating';
+    $col2 = 'cc';
+    $meta = 'tags';
 
     if ($req == 'all' or $req == 'All') { /* mobile starts w/ capital letter */
       $crit = "SELECT * FROM $table";
@@ -73,8 +72,7 @@
     } else {
       $req = "'%" . $req . "%'";
       $crit = "SELECT * FROM $table WHERE (
-          $meta LIKE $req OR $col1 LIKE $req OR $col2 LIKE $req
-              OR $col3 LIKE $req);";
+          $meta LIKE $req OR $col1 LIKE $req OR $col2 LIKE $req);";
     }
 
     $restg = '<div class="row mt-4">';
@@ -119,7 +117,7 @@
       foreach($db->query($crit) as $row) {
         echo implode( "", array($restg, $medtg, $vidtgl, $row[$pkey], $attribs,
             $row[$pkey], $vidtgr, $srctgl, $row[$pkey], $srctgr) );
-        if ($row[$col3]) {
+        if ($row[$col2]) {
           echo $trktgl . $row[$pkey] . $trktgr;
         }
         echo implode( "", array($failtg, $failin, $failct, $vidct, $medct,

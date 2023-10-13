@@ -3,3 +3,6 @@ catsel.dat
 
 # local database login data
 pmalogin.dat
+
+# tv recordings data
+tvrecs.sql

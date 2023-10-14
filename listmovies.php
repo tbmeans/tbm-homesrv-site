@@ -54,7 +54,7 @@
     }
 
     $user = '';
-    $database = $user . "_" . '';
+    $database = '';
     $dsn = "mysql:host=localhost;dbname=$database";
     $password = '';
     $table = 'tvrecs';

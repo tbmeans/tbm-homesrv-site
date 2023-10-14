@@ -19,9 +19,9 @@
 * 'whenrec', date recorded in YYYYMMDD##
   * Final 2 digits distinguish recordings made on same date
   * This is the primary key
-* 'cc', SQL boolean of whether the recording has caption data
-* 'rating', make up your own categories
-  * Also use categories to fill the Select options in movies.html 
+* 'cc', boolean (TINYINT) of whether the recording has caption data
+* 'tags', make up your own categories
+  * Also use tags to fill the Select options in movies.html 
 ### Bing Image table
 * Image of the Day date YYYYMMDD##
   * Multiple images if Bing Wallpaper app differed from bing.com

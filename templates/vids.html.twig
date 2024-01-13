@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ metatitle }}</title>
+    <style>
+      body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        color: white;
+      }
+      .hero {
+        background-color: slateblue;
+        text-align: center;
+        height: 12rem;
+        padding-top: 4rem;
+      }
+      .nav-list {
+        list-style-type: none;
+        padding-top: 5rem;
+        text-align: left;
+        padding-left: 2rem;
+      }
+      .nav-item {
+        display: inline-block;
+      }
+      .nav-item > a {
+        color: white;
+        text-decoration: none;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+      }
+      .card {
+        width: 25%;
+        height: 10rem;
+        padding-top: 3rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>{{ pagetitle }}</h1>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="card-container">
+    {% for vid in videos %}
+      <div class="card">
+        <img
+          src="{{ asset('Videos/posters/' ~ vid.whenrec ~ '.png') }}"
+          alt="{{ vid.title }}"
+          width=50%
+        />
+        <br>
+        <a href="/{{ vid.whenrec ~ 'cc' ~ vid.cc }}">
+          {{ vid.title }}
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </body>
+</html>

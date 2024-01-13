@@ -1,8 +1,15 @@
-# personal list of categories to populate the <select> in movies.html
-catsel.dat
 
-# local database login data
-pmalogin.dat
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
 
-# tv recordings data
-tvrecs.sql
+### project-specific assets (fill in your own assets) ###
+/public/img/*
+/public/Videos/*
+/public/Videos/posters/*

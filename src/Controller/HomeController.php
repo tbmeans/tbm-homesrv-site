@@ -15,7 +15,7 @@ class HomeController extends AbstractController
         $pagetitle = 'digital collections';
         $cards = [
             new Card('allrecs', 'All movies', null, null, null),
-            new Card('nfl', 'Football on TV', null, null, null),
+            new Card('seasonal', 'Must-see TV', null, null, null),
         ];
 
         return $this->render('page.html.twig', [

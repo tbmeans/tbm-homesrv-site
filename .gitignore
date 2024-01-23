@@ -13,3 +13,6 @@
 /public/img/*
 /public/Videos/*
 /public/Videos/posters/*
+
+### and it weirds me out to have that APP_SECRET in .env go to github so...
+/.env

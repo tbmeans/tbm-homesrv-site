@@ -14,8 +14,8 @@ class HomeController extends AbstractController
         $metatitle = 'Media server';
         $pagetitle = 'digital collections';
         $cards = [
-            new Card('allrecs', 'All movies', null, null, null),
-            new Card('seasonal', 'Must-see TV', null, null, null),
+		new Card('allrecs', 'All movies', null, null, null),
+		new Card('sleep', 'Sleep timer favorites', null, null, null),
         ];
 
         return $this->render('page.html.twig', [
